@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables */
+:root{
+    --color-principal: #823772; 
+    --color-secundario: #e1b7ed;
+    --color-secundario: #e1b7ed9e;
+    --color-acento: #6c48d8;
+    --color-acento-dos: #4d1cdd;
+    --font-principal: 'Playwrite GB S', sans-serif;
+    --img-fondo: url("../assets/images/image-inicio3.jpg");
+}
+
+
+/* Estilos Navbar */
+nav{
+    background-color: var(--color-secundario);
+    a{
+        padding: 20px;
+        font-family: var(--font-principal);
+        color: var(--color-principal);
+    }
+    
+    a:hover{
+        text-shadow: 1px 1px 2px #823772;
+    }
+
+    .nav-img{
+        border-radius: 50%;
+    }
+
+}
+
+
+/* Estilos Footer */
+.row{
+    justify-content: center;
+    margin: 0 !important;
+}
+.footer{
+    background-color: var(--color-secundario);
+}
+
+
+/* Estilos inicio */
+main{
+    .carousel-img{
+        width: 100vw;
+        height: 60vh;
+        object-fit: cover;
+    }
+}
+section{
+    padding: 30px;
+
+    h3{
+        padding: 20px;
+        font-family: var(--font-principal);
+    }
+
+
+    .section-boton{
+        margin: 10px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .section-boton-item{
+        text-decoration: none;
+        color: var(--color-principal);
+        margin: 20px;
+    }
+
+    .section-boton-item:hover{
+        color: black;
+        text-shadow: 1px 0px 1px var(--color-acento);
+    }
+}
+
+
+/* Seccion Contactos */
+form{
+    .form-contacto{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.7);
+        align-items: center;
+    }
+    
+    label{
+        font-weight: bold;
+        padding-right: 10px;
+    }
+    
+    p:last-child{
+        margin-left: 100px;
+    }
+}
+.image-contacto{
+    height: auto;
+    object-fit: cover;
+    background-image: url(../assets/images/image-inicio3.jpg);
+}
+
+
+/* Seccion Nosotros */
+.image-nosotros{
+    height: auto;
+    object-fit: cover;
+    background-image: url(../assets/images/image-inicio3.jpg);
+}
+/* Responsive */
+@media screen and (max-width: 576px) {
+    .row{
+        flex-direction: column !important;
+    }
+}
+
+
+/* Seccion productos */
+.carousel-img-prod{
+    width: 100vw;
+    height: 30vh;
+    object-fit: cover;
+}
+
+
+/* Botones para las cards */
+#btn-self {
+    color: #fff;
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
+}
+#btn-self:hover{
+    background-color: var(--color-acento-dos);
+}
+
+
