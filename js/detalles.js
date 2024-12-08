@@ -24,12 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
 function detallesProductos(producto) {
     const contenedor = document.getElementById('contenedor-detalles');
     contenedor.innerHTML = ''; 
-    
+
     const row = document.createElement('div');
     row.classList.add('row');
 
     const colImagenGrande = document.createElement('div');
-    colImagenGrande.classList.add('col', 'col-6', 'imagen-grande');
+    colImagenGrande.classList.add('col', 'col-lg-6', 'col-sm', 'imagen-grande');
 
     const imgGrande = document.createElement('img');
     imgGrande.src = producto.imagen;
@@ -39,18 +39,18 @@ function detallesProductos(producto) {
     colImagenGrande.appendChild(imgGrande);
 
     const colImagenChica = document.createElement('div');
-    colImagenChica.classList.add('col', 'col-2', 'imagen-chica');
+    colImagenChica.classList.add('col', 'col-lg-2', 'imagen-chica');
 
     producto.imagenes.forEach(imagen => {
         const imgChica = document.createElement('img');
         imgChica.src = imagen;
         imgChica.alt = producto.nombre;
-        imgChica.classList.add('row', 'imagen-chica-i');
+        imgChica.classList.add('row', 'imagen-chica-i', 'p-1');
         colImagenChica.appendChild(imgChica);
     });
 
     const colTextDetalles = document.createElement('div');
-    colTextDetalles.classList.add('col', 'col-4', 'text-detalles');
+    colTextDetalles.classList.add('col', 'col-lg-4', 'col-sm', 'text-detalles');
 
     const title = document.createElement('h3');
     title.textContent = producto.nombre;
@@ -58,8 +58,18 @@ function detallesProductos(producto) {
     const description = document.createElement('p');
     description.textContent = producto.descripcion;
 
+    const price = document.createElement('p');
+    price.textContent = "$ " + producto.precio;
+
+    const botonComprar = document.createElement('a');
+    botonComprar.classList.add ('btn');
+    botonComprar.id = 'btn-self';
+    botonComprar.textContent = "Comprar";
+
     colTextDetalles.appendChild(title);
     colTextDetalles.appendChild(description);
+    colTextDetalles.appendChild(price);
+    colTextDetalles.appendChild(botonComprar);
 
     row.appendChild(colImagenGrande);
     row.appendChild(colImagenChica);
