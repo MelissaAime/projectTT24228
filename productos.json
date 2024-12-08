@@ -5,7 +5,7 @@
         "tipo": "tinto",
         "descripcion": "Conocido por su intensidad y complejidad, con notas a frutos negros y especias.",
         "precio": 4500,
-        "imagen": ""
+        "imagen": "../assets/images/vinotinto.jpg"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "tipo": "blanco",
         "descripcion": "Aroma floral y frutal, ideal para acompañar comidas ligeras.",
         "precio": 5000,
-        "imagen": ""
+        "imagen": "../assets/images/vinoblanco.jpg"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "tipo": "tinto",
         "descripcion": "Taninos firmes y sabores a frutos rojos y negros, con notas especiadas.",
         "precio": 6000,
-        "imagen": ""
+        "imagen": "../assets/images/vinotinto2.jpg"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "tipo": "tinto",
         "descripcion": "Tinto ligero y frutal, con notas a ciruela y especias.",
         "precio": 4500,
-        "imagen": ""
+        "imagen": "../assets/images/vinotinto3.jpg"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "tipo": "tinto",
         "descripcion": "Cuerpo medio a completo, con notas a frutos negros, pimienta negra y chocolate.",
         "precio": 5000,
-        "imagen": ""
+        "imagen": "../assets/images/vinotinto4.jpg"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "tipo": "blanco",
         "descripcion": "Versátil, desde estilos frescos y frutales hasta más complejos con notas de roble.",
         "precio": 5000,
-        "imagen": ""
+        "imagen": "../assets/images/vinoblanco2.jpg"
     },
     {
         "id": 7,
@@ -53,15 +53,15 @@
         "tipo": "blanco",
         "descripcion": "Fresco y aromático, con notas cítricas y herbales.",
         "precio": 4700,
-        "imagen": ""
+        "imagen": "../assets/images/vinoblanco3.jpg"
     },
     {
         "id": 8,
         "nombre": "Pinot Noir",
-        "tipo": "tinto",
+        "tipo": "blanco",
         "descripcion": "Elegante y delicado, con notas a frutos rojos y florales.",
         "precio": 5200,
-        "imagen": ""
+        "imagen": "../assets/images/vinoblanco4.jpg"
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "tipo": "tinto",
         "descripcion": "Suave y redondo, con notas a frutos negros y especias.",
         "precio": 5600,
-        "imagen": ""
+        "imagen": "../assets/images/vinotinto5.jpg"
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "tipo": "tinto",
         "descripcion": "Buena acidez y taninos suaves, con notas a frutos rojos y especiados.",
         "precio": 5000,
-        "imagen": ""
+        "imagen": "../assets/images/vinotinto6.jpg"
     },
     {
         "id": 11,
@@ -85,7 +85,7 @@
         "tipo": "rosado",
         "descripcion": "Fresco y frutal, ideal para el verano.",
         "precio": 3700,
-        "imagen": ""
+        "imagen": "../assets/images/vinorosado.jpg"
     },
     {
         "id": 12,
@@ -93,6 +93,6 @@
         "tipo": "rosado",
         "descripcion": "Aroma floral y frutal, con un toque de acidez.",
         "precio": 5600,
-        "imagen": ""
+        "imagen": "../assets/images/vinorosado2.jpg"
     }
 ]
