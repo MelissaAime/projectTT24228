@@ -1,6 +1,98 @@
 [
     {
         "id": 1,
-        "nombre": "Malbec Mendoza"
+        "nombre": "Malbec Mendoza",
+        "tipo": "tinto",
+        "descripcion": "Conocido por su intensidad y complejidad, con notas a frutos negros y especias.",
+        "precio": 4500,
+        "imagen": ""
+    },
+    {
+        "id": 2,
+        "nombre": "Torrontés",
+        "tipo": "blanco",
+        "descripcion": "Aroma floral y frutal, ideal para acompañar comidas ligeras.",
+        "precio": 5000,
+        "imagen": ""
+    },
+    {
+        "id": 3,
+        "nombre": "Cabernet Sauvignon",
+        "tipo": "tinto",
+        "descripcion": "Taninos firmes y sabores a frutos rojos y negros, con notas especiadas.",
+        "precio": 6000,
+        "imagen": ""
+    },
+    {
+        "id": 4,
+        "nombre": "Bonarda",
+        "tipo": "tinto",
+        "descripcion": "Tinto ligero y frutal, con notas a ciruela y especias.",
+        "precio": 4500,
+        "imagen": ""
+    },
+    {
+        "id": 5,
+        "nombre": "Syrah",
+        "tipo": "tinto",
+        "descripcion": "Cuerpo medio a completo, con notas a frutos negros, pimienta negra y chocolate.",
+        "precio": 5000,
+        "imagen": ""
+    },
+    {
+        "id": 6,
+        "nombre": "Chardonnay",
+        "tipo": "blanco",
+        "descripcion": "Versátil, desde estilos frescos y frutales hasta más complejos con notas de roble.",
+        "precio": 5000,
+        "imagen": ""
+    },
+    {
+        "id": 7,
+        "nombre": "Sauvignon Blanc",
+        "tipo": "blanco",
+        "descripcion": "Fresco y aromático, con notas cítricas y herbales.",
+        "precio": 4700,
+        "imagen": ""
+    },
+    {
+        "id": 8,
+        "nombre": "Pinot Noir",
+        "tipo": "tinto",
+        "descripcion": "Elegante y delicado, con notas a frutos rojos y florales.",
+        "precio": 5200,
+        "imagen": ""
+    },
+    {
+        "id": 9,
+        "nombre": "Merlot",
+        "tipo": "tinto",
+        "descripcion": "Suave y redondo, con notas a frutos negros y especias.",
+        "precio": 5600,
+        "imagen": ""
+    },
+    {
+        "id": 10,
+        "nombre": "Tempranillo",
+        "tipo": "tinto",
+        "descripcion": "Buena acidez y taninos suaves, con notas a frutos rojos y especiados.",
+        "precio": 5000,
+        "imagen": ""
+    },
+    {
+        "id": 11,
+        "nombre": "Rosado de Malbec",
+        "tipo": "rosado",
+        "descripcion": "Fresco y frutal, ideal para el verano.",
+        "precio": 3700,
+        "imagen": ""
+    },
+    {
+        "id": 12,
+        "nombre": "Torrontés Rosado",
+        "tipo": "rosado",
+        "descripcion": "Aroma floral y frutal, con un toque de acidez.",
+        "precio": 5600,
+        "imagen": ""
     }
 ]
