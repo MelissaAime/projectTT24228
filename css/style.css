@@ -92,18 +92,12 @@ form{
         background-color: rgba(255, 255, 255, 0.7);
         align-items: center;
     }
-    
-    label{
-        font-weight: bold;
-        padding-right: 10px;
-    }
-    
-    p:last-child{
-        margin-left: 100px;
-    }
+
 }
 .image-contacto{
     height: auto;
+    display: flex;
+    justify-content: center;
     background-size: cover;
     background-position: center;
     background-image: var(--img-fondo);
