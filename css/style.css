@@ -79,7 +79,9 @@ section{
         color: black;
         text-shadow: 1px 0px 1px var(--color-acento);
     }
+
 }
+
 
 
 /* Seccion Contactos */
@@ -140,39 +142,6 @@ form{
 #btn-self:hover{
     background-color: var(--color-acento-dos);
 }
-
-
-/* Sección detalles */
-/* .detalles {
-    .imagen-grande{
-        height: 500px;
-    }
-    .imagen-grande-i{
-        width: 98%;
-        height: 98%;
-    }
-    .imagen-chica{
-        height: 500px;
-    }
-    .imagen-chica-i{
-        height: 33%;
-        width: 100%;
-    }
-    .text-detalles{
-        height: 600px;
-    }
-}
-/* Responsive 
-@media screen and (max-width: 576px) {
-    .imagen-chica{
-        height: 60px;
-    }
-    .imagen-chica-i{
-        height: 100%;
-        width: 33%;
-    }
-} 
-*/
 
 /* Sección detalles */
 .detalles {

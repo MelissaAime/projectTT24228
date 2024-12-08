@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "destacado": true,
         "nombre": "Malbec Mendoza",
         "tipo": "tinto",
         "descripcion": "Conocido por su intensidad y complejidad, con notas a frutos negros y especias.",
@@ -14,6 +15,7 @@
     },
     {
         "id": 2,
+        "destacado": true,
         "nombre": "Torrontés",
         "tipo": "blanco",
         "descripcion": "Aroma floral y frutal, ideal para acompañar comidas ligeras.",
@@ -27,6 +29,7 @@
     },
     {
         "id": 3,
+        "destacado": false,
         "nombre": "Cabernet Sauvignon",
         "tipo": "tinto",
         "descripcion": "Taninos firmes y sabores a frutos rojos y negros, con notas especiadas.",
@@ -40,6 +43,7 @@
     },
     {
         "id": 4,
+        "destacado": false,
         "nombre": "Bonarda",
         "tipo": "tinto",
         "descripcion": "Tinto ligero y frutal, con notas a ciruela y especias.",
@@ -53,6 +57,7 @@
     },
     {
         "id": 5,
+        "destacado": false,
         "nombre": "Syrah",
         "tipo": "tinto",
         "descripcion": "Cuerpo medio a completo, con notas a frutos negros, pimienta negra y chocolate.",
@@ -66,6 +71,7 @@
     },
     {
         "id": 6,
+        "destacado": true,
         "nombre": "Chardonnay",
         "tipo": "blanco",
         "descripcion": "Versátil, desde estilos frescos y frutales hasta más complejos con notas de roble.",
@@ -79,6 +85,7 @@
     },
     {
         "id": 7,
+        "destacado": false,
         "nombre": "Sauvignon Blanc",
         "tipo": "blanco",
         "descripcion": "Fresco y aromático, con notas cítricas y herbales.",
@@ -92,6 +99,7 @@
     },
     {
         "id": 8,
+        "destacado": false,
         "nombre": "Pinot Noir",
         "tipo": "blanco",
         "descripcion": "Elegante y delicado, con notas a frutos rojos y florales.",
@@ -105,6 +113,7 @@
     },
     {
         "id": 9,
+        "destacado": true,
         "nombre": "Merlot",
         "tipo": "tinto",
         "descripcion": "Suave y redondo, con notas a frutos negros y especias.",
@@ -118,6 +127,7 @@
     },
     {
         "id": 10,
+        "destacado": true,
         "nombre": "Tempranillo",
         "tipo": "tinto",
         "descripcion": "Buena acidez y taninos suaves, con notas a frutos rojos y especiados.",
@@ -131,6 +141,7 @@
     },
     {
         "id": 11,
+        "destacado": false,
         "nombre": "Rosado de Malbec",
         "tipo": "rosado",
         "descripcion": "Fresco y frutal, ideal para el verano.",
@@ -144,6 +155,7 @@
     },
     {
         "id": 12,
+        "destacado": true,
         "nombre": "Torrontés Rosado",
         "tipo": "rosado",
         "descripcion": "Aroma floral y frutal, con un toque de acidez.",
