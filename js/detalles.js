@@ -59,10 +59,10 @@ function detallesProductos(producto) {
     description.textContent = producto.descripcion;
 
     const price = document.createElement('p');
-    price.textContent = "$ " + producto.precio;
+    price.textContent = "Precio: $ " + producto.precio;
 
     const botonComprar = document.createElement('a');
-    botonComprar.classList.add ('btn');
+    botonComprar.classList.add ('btn', 'mx-auto');
     botonComprar.id = 'btn-self';
     botonComprar.textContent = "Comprar";
 

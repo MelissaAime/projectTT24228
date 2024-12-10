@@ -180,18 +180,23 @@ form{
 }
 
 .text-detalles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     flex: 1 1 30%;
     padding: 10px;
+
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
 }
 
-.text-detalles h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
 
-.text-detalles p {
-    font-size: 1.1em;
-}
 
 /* Responsive */
 @media screen and (max-width: 576px) {
