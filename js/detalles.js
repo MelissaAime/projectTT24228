@@ -66,6 +66,10 @@ function detallesProductos(producto) {
     botonComprar.id = 'btn-self';
     botonComprar.textContent = "Comprar";
 
+    botonComprar.addEventListener('click', () => {
+        agregarAlCarrito(producto);
+    });
+
     colTextDetalles.appendChild(title);
     colTextDetalles.appendChild(description);
     colTextDetalles.appendChild(price);
@@ -78,3 +82,6 @@ function detallesProductos(producto) {
     contenedor.appendChild(row);
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    actualizarContadorCarrito();
+});

@@ -40,6 +40,47 @@ nav{
 
 }
 
+/* Estilo del dropdown */
+#cart-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    right: 10px;
+    top: 50px;
+    width: 250px;
+    z-index: 1000;
+    padding: 10px;
+}
+
+#cart-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-dropdown li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-dropdown li:last-child {
+    border-bottom: none;
+}
+
+#cart-dropdown button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Cuando el dropdown esté visible */
+#cart-dropdown.show {
+    display: block;
+}
+
+
 
 /* Estilos Footer */
 .row{
