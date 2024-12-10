@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.width = '18rem';
         
             const img = document.createElement('img');
-            img.classList.add('card-img-top');
+            img.classList.add('card-img-top', 'imagen-tarj');
             img.src = producto.imagen;
             img.alt = producto.nombre;
         
