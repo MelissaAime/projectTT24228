@@ -141,6 +141,18 @@ form{
     }
 }
 
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Filtros */
+.filtros{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 /* Botones para las cards */
 #btn-self {
@@ -203,7 +215,6 @@ form{
         font-size: 1.1em;
     }
 }
-
 
 
 /* Responsive */

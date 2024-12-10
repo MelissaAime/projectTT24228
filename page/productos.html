@@ -82,7 +82,8 @@
 
         <!-- Productos -->
           <!-- Filtro de productos -->
-          <div class="container filtros">
+          <div class="container filtros d-flex my-3 px-5">
+            <p class="m-0 p-3">Filtrar por: </p>
             <button class="btn" onclick="filtrarProductos('tinto')">Tinto</button>
             <button class="btn" onclick="filtrarProductos('blanco')">Blanco</button>
             <button class="btn" onclick="filtrarProductos('rosado')">Rosado</button>
@@ -90,9 +91,8 @@
           </div>
 
           <section class="product">
-            <h3 class="">Productos</h3>
-              
             <div class="container">
+              <h3 class="">Productos</h3>
               <!-- Tarjetas, se generan con js-->
               <div id="contenedor-tarjetas" class="row row-cols-auto"></div>
             </div>
