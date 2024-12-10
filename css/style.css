@@ -13,6 +13,7 @@
     --font-principal: 'Playwrite GB S', sans-serif;
     --img-fondo: url("../assets/images/fondobodega3.jpg");
     --img-fondo-dos: url("../assets/images/destacado2.jpg");
+    --img-fondo-tres: url("../assets/images/fondoviñedo.jpg");
 }
 
 
@@ -91,6 +92,20 @@ section{
         text-shadow: 1px 0px 1px var(--color-acento);
     }
 
+}
+/* Seccion Nosotros */
+.image-inicio{
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-image: var(--img-fondo-tres);
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+    .image-inicio{
+        height: 100px;
+    }
 }
 
 
