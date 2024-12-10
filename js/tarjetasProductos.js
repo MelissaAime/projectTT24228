@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+    let productos = [];
+
     function generarTarjetas(datos) {
         const contenedor = document.getElementById('contenedor-tarjetas');
+        contenedor.innerHTML = '';
         
         datos.forEach(producto => {
             const card = document.createElement('div');
@@ -34,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 window.location.href = `detalles.html?id=${producto.id}`;
             });
             
-        
             cardBody.appendChild(title);
             cardBody.appendChild(text);
             cardBody.appendChild(button);
@@ -46,10 +48,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    window.filtrarProductos = function(tipo) {
+        let productosFiltrados;
+        if (tipo === '') {
+            productosFiltrados = productos; 
+        } else {
+            productosFiltrados = productos.filter(producto => producto.tipo === tipo); 
+        }
+        actualizarBotonesFiltro(tipo);
+        generarTarjetas(productosFiltrados); 
+    }
+
+    function actualizarBotonesFiltro(tipoSeleccionado) {
+        const botonesFiltro = document.querySelectorAll('.filtros button');
+
+        botonesFiltro.forEach(button => {
+            button.removeAttribute('id');
+            
+            if (button.textContent.trim().toLowerCase() === tipoSeleccionado.toLowerCase() || (tipoSeleccionado === '' && button.textContent.trim() === 'Todos')) {
+                button.id = 'btn-filt';
+            }
+        });
+    }
+
     fetch('/productos.json')
         .then(response => response.json())
         .then(data => {
-            generarTarjetas(data);
+            productos = data;
+            generarTarjetas(productos);
         })
         .catch(error => {
             console.error('Error al cargar el archivo JSON:', error);
