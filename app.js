@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    fetch('/projectTT24228/productos.json')
+    fetch('/productos.json')
         .then(response => response.json())
         .then(data => {
             generarTarjetasDestacadas(data);
