@@ -97,12 +97,30 @@
         <!-- Productos -->
           <!-- Filtro de productos -->
           <div class="container filtros d-flex my-3 px-5">
-            <p class="m-0 p-3">Filtrar por: </p>
-            <button class="btn" onclick="filtrarProductos('tinto')">Tinto</button>
-            <button class="btn" onclick="filtrarProductos('blanco')">Blanco</button>
-            <button class="btn" onclick="filtrarProductos('rosado')">Rosado</button>
-            <button class="btn" onclick="filtrarProductos('')">Todos</button> <!-- Mostrar todos los productos -->
+
+            <!-- Pantallas pequeñas -->
+            <div class="dropdown d-block d-md-none">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Filtro
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><button class="btn" onclick="filtrarProductos('tinto')">Tinto</button></li>
+                    <li><button class="btn" onclick="filtrarProductos('blanco')">Blanco</button></li>
+                    <li><button class="btn" onclick="filtrarProductos('rosado')">Rosado</button></li>
+                    <li><button class="btn" onclick="filtrarProductos('')">Todos</button></li>
+                </ul>
+            </div>
+
+            <!-- Pantallas grandes -->
+            <div class="d-none d-md-flex ">
+                <p class="m-0 p-3">Filtrar por: </p>
+                <button class="btn" onclick="filtrarProductos('tinto')">Tinto</button>
+                <button class="btn" onclick="filtrarProductos('blanco')">Blanco</button>
+                <button class="btn" onclick="filtrarProductos('rosado')">Rosado</button>
+                <button class="btn" onclick="filtrarProductos('')">Todos</button> <!-- Mostrar todos los productos -->
+            </div>
           </div>
+
 
           <section class="product">
             <div class="container">
