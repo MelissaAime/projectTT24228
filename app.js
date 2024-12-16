@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    fetch('productos.json')
+    fetch('https://melissaaime.github.io/projectTT24228/productos.json')
         .then(response => response.json())
         .then(data => {
             generarTarjetasDestacadas(data);

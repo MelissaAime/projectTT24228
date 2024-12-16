@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const productId = urlParams.get('id');
     
     if (productId) {
-        fetch('/productos.json')
+        fetch('https://melissaaime.github.io/projectTT24228/productos.json')
             .then(response => response.json())
             .then(data => {
                 const producto = data.find(item => item.id === parseInt(productId));
