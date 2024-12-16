@@ -135,37 +135,6 @@ function agregarAlCarrito(producto, cantidad) {
 }
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     document.getElementById('cart-icon').addEventListener('click', () => {
-//         const dropdown = document.getElementById('cart-dropdown');
-//         dropdown.classList.toggle('show');
-//         mostrarContenidoCarrito();
-//     });
-
-//     function mostrarContenidoCarrito() {
-//         const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-//         const listaCarrito = document.getElementById('cart-items-list');
-//         listaCarrito.innerHTML = '';
-
-//         if (carrito.length === 0) {
-//             const mensajeVacio = document.createElement('li');
-//             mensajeVacio.textContent = 'El carrito está vacío.';
-//             listaCarrito.appendChild(mensajeVacio);
-//         } else {
-//             carrito.forEach(item => {
-//                 const li = document.createElement('li');
-//                 li.textContent = `${item.nombre} - $${item.precio} x ${item.cantidad}`;
-//                 listaCarrito.appendChild(li);
-//             });
-//         }
-//     }
-
-//     document.addEventListener('DOMContentLoaded', () => {
-//         actualizarContadorCarrito();
-//         mostrarContenidoCarrito();
-//     });
-// });
-
 function mostrarMensaje(mensaje) {
     const modal = document.getElementById('modal');
     const modalMessage = document.getElementById('prod-agregado');   
@@ -183,4 +152,33 @@ document.addEventListener('click', (event) => {
     if (!cartIcon.contains(event.target) && !dropdown.contains(event.target)) {
         dropdown.classList.remove('show');
     }
+});
+
+
+// Finalizar compra y borrar el storage
+const btnSelf = document.getElementById('btn-self');
+
+// Función para verificar si el carrito tiene productos
+function verificarCarrito() {
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+    if (carrito.length > 0) {
+        btnSelf.style.display = 'block';
+    } else {
+        btnSelf.style.display = 'none';
+    }
+}
+
+verificarCarrito();
+
+btnSelf.addEventListener('click', function() {
+    const carritoDetalle = document.getElementById('carrito-detalle');
+
+    localStorage.clear();
+
+    carritoDetalle.innerHTML = "<p>¡Gracias por tu compra!</p>";
+    btnSelf.textContent = "Ver productos";
+    btnSelf.onclick = function() {
+        window.location.href = 'productos.html';
+    };
 });
