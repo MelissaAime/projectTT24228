@@ -64,10 +64,11 @@ function detallesProductos(producto) {
     const botonComprar = document.createElement('a');
     botonComprar.classList.add ('btn', 'mx-auto');
     botonComprar.id = 'btn-self';
-    botonComprar.textContent = "Comprar";
+    botonComprar.textContent = "Agregar al carrito";
 
     botonComprar.addEventListener('click', () => {
         agregarAlCarrito(producto);
+        mostrarMensaje(`${producto.nombre} se agregó al carrito`)
     });
 
     colTextDetalles.appendChild(title);

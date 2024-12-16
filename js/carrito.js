@@ -51,6 +51,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+function mostrarMensaje(mensaje) {
+    const modal = document.getElementById('modal');
+    const modalMessage = document.getElementById('prod-agregado');   
+    modalMessage.textContent = mensaje;
+    modal.style.display = 'block';
+
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 3000);
+}
+
 document.addEventListener('click', (event) => {
     const dropdown = document.getElementById('cart-dropdown');
     const cartIcon = document.getElementById('cart-icon');
