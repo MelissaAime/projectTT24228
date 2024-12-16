@@ -4,14 +4,15 @@ function actualizarContadorCarrito() {
     cartCount.textContent = carrito.length;
 }
 
-function agregarAlCarrito(producto) {
+function agregarAlCarrito(producto, cantidad) {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     
     const index = carrito.findIndex(item => item.id === producto.id);
     if (index === -1) {
+        producto.cantidad = cantidad;
         carrito.push(producto);
     } else {
-        carrito[index].cantidad += 1;
+        carrito[index].cantidad += cantidad;
     }
     
     localStorage.setItem('carrito', JSON.stringify(carrito));

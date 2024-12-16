@@ -61,19 +61,30 @@ function detallesProductos(producto) {
     const price = document.createElement('p');
     price.textContent = "Precio: $ " + producto.precio;
 
+    const cantidadInput = document.createElement('input');
+    cantidadInput.type = 'number';
+    cantidadInput.id = 'cantidadProducto';
+    cantidadInput.name = 'cantidad';
+    cantidadInput.value = 1;
+    cantidadInput.min = 1; 
+    cantidadInput.max = 10;
+    cantidadInput.classList.add('form-control', 'm-3'); 
+
     const botonComprar = document.createElement('a');
     botonComprar.classList.add ('btn', 'mx-auto');
     botonComprar.id = 'btn-self';
     botonComprar.textContent = "Agregar al carrito";
 
     botonComprar.addEventListener('click', () => {
-        agregarAlCarrito(producto);
-        mostrarMensaje(`${producto.nombre} se agregó al carrito`)
+        const cantidad = parseInt(cantidadInput.value);
+        agregarAlCarrito(producto, cantidad);
+        mostrarMensaje(`${producto.nombre} x${cantidad} se agregó al carrito`)
     });
 
     colTextDetalles.appendChild(title);
     colTextDetalles.appendChild(description);
     colTextDetalles.appendChild(price);
+    colTextDetalles.appendChild(cantidadInput);
     colTextDetalles.appendChild(botonComprar);
 
     row.appendChild(colImagenGrande);
