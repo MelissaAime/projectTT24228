@@ -3,4 +3,8 @@
 ***
 
 El siguiente proyecto fue realizado cumpliendo los requisitos del curso de front end de Talento Tech 2024.
-Utilizando HTML, CSS con Bootstrap, y JavaScript realicé la siguiente página web simulando una tienda de flores.
+Utilizando HTML, CSS con Bootstrap, y JavaScript realicé este e-commerce simulando una bodega.
+
+
+##### Melissa Aime
+2024
