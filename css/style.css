@@ -222,12 +222,12 @@ form{
 }
 
 /* Botones para las cards */
-#btn-self {
-    color: #fff;
-    background-color: var(--color-acento);
-    border-color: var(--color-acento);
+.btn-self {
+    color: #fff !important;
+    background-color: var(--color-acento) !important;
+    border-color: var(--color-acento) !important;
 }
-#btn-self:hover{
+.btn-self:hover{
     background-color: var(--color-acento-dos);
 }
 

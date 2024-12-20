@@ -27,8 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             text.textContent = producto.descripcion;
         
             const button = document.createElement('a');
-            button.classList.add('btn', 'mx-auto');
-            button.id = 'btn-self';
+            button.classList.add('btn', 'mx-auto', 'btn-self');
             button.textContent = 'Detalles';
             button.dataset.productId = producto.id;
 

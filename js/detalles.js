@@ -71,8 +71,7 @@ function detallesProductos(producto) {
     cantidadInput.classList.add('form-control', 'm-3'); 
 
     const botonComprar = document.createElement('a');
-    botonComprar.classList.add ('btn', 'mx-auto');
-    botonComprar.id = 'btn-self';
+    botonComprar.classList.add ('btn', 'mx-auto', 'btn-self');
     botonComprar.textContent = "Agregar al carrito";
 
     botonComprar.addEventListener('click', () => {
