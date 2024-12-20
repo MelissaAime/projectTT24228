@@ -6,11 +6,11 @@
         "tipo": "tinto",
         "descripcion": "Conocido por su intensidad y complejidad, con notas a frutos negros y especias.",
         "precio": 4500,
-        "imagen": "../assets/images/vinotinto.jpg",
+        "imagen": "assets/images/vinotinto.jpg",
         "imagenes": [
-            "../assets/images/vinotinto.jpg",
-            "../assets/images/vinotinto.jpg",
-            "../assets/images/vinotinto.jpg"
+            "assets/images/vinotinto.jpg",
+            "assets/images/vinotinto.jpg",
+            "assets/images/vinotinto.jpg"
         ]
     },
     {
