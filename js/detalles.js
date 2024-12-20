@@ -50,7 +50,7 @@ function detallesProductos(producto) {
     });
 
     const colTextDetalles = document.createElement('div');
-    colTextDetalles.classList.add('col', 'col-lg-4', 'col-sm', 'text-detalles');
+    colTextDetalles.classList.add('col', 'col-lg-4', 'col-sm', 'text-detalles', 'px-5');
 
     const title = document.createElement('h3');
     title.textContent = producto.nombre;
@@ -68,7 +68,7 @@ function detallesProductos(producto) {
     cantidadInput.value = 1;
     cantidadInput.min = 1; 
     cantidadInput.max = 10;
-    cantidadInput.classList.add('form-control', 'm-3'); 
+    cantidadInput.classList.add('form-control'); 
 
     const botonComprar = document.createElement('a');
     botonComprar.classList.add ('btn', 'mx-auto', 'btn-self');
