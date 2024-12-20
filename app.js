@@ -5,15 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
         datos.forEach(producto => {
 
             if (producto.destacado === true){
+
+                const enlace = document.createElement('a');
+                enlace.href = './page/productos.html'; 
+                enlace.style.textDecoration = 'none';
+
                 const card = document.createElement('div');
                 card.classList.add('card', 'text-center', 'col', 'm-3', 'p-0');
                 card.style.width = '18rem';
-            
+                
                 const img = document.createElement('img');
                 img.classList.add('card-img-top', 'imagen-tarj');
                 img.src = producto.imagen;
                 img.alt = producto.nombre;
-            
+
                 const cardBody = document.createElement('div');
                 cardBody.classList.add('card-body');
             
@@ -21,11 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 title.classList.add('card-title');
                 title.textContent = producto.nombre;       
             
-                cardBody.appendChild(title);
-            
-                card.appendChild(img);
+                enlace.appendChild(title)
+                cardBody.appendChild(enlace);
+
+                card.appendChild(img)
                 card.appendChild(cardBody);
-            
+
                 contenedor.appendChild(card);
             }
         });
