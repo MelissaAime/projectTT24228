@@ -6,11 +6,12 @@
         "tipo": "tinto",
         "descripcion": "Conocido por su intensidad y complejidad, con notas a frutos negros y especias.",
         "precio": 4500,
-        "imagen": "assets/images/vinotinto.jpg",
+        "imagenD": "assets/images/vinotinto.jpg",
+        "imagen": "../assets/images/vinotinto.jpg",
         "imagenes": [
-            "assets/images/vinotinto.jpg",
-            "assets/images/vinotinto.jpg",
-            "assets/images/vinotinto.jpg"
+            "../assets/images/vinotinto.jpg",
+            "../assets/images/vinotinto.jpg",
+            "../assets/images/vinotinto.jpg"
         ]
     },
     {
@@ -20,6 +21,7 @@
         "tipo": "blanco",
         "descripcion": "Aroma floral y frutal, ideal para acompañar comidas ligeras.",
         "precio": 5000,
+        "imagenD": "assets/images/vinoblanco.jpg",
         "imagen": "../assets/images/vinoblanco.jpg",
         "imagenes": [
             "../assets/images/vinoblanco.jpg",
@@ -34,6 +36,7 @@
         "tipo": "tinto",
         "descripcion": "Taninos firmes y sabores a frutos rojos y negros, con notas especiadas.",
         "precio": 6000,
+        "imagenD": "assets/images/vinotinto2.jpg",
         "imagen": "../assets/images/vinotinto2.jpg",
         "imagenes": [
             "../assets/images/vinotinto2.jpg",
@@ -48,6 +51,7 @@
         "tipo": "tinto",
         "descripcion": "Tinto ligero y frutal, con notas a ciruela y especias.",
         "precio": 4500,
+        "imagenD": "assets/images/vinotinto3.jpg",
         "imagen": "../assets/images/vinotinto3.jpg",
         "imagenes": [
             "../assets/images/vinotinto3.jpg",
@@ -62,6 +66,7 @@
         "tipo": "tinto",
         "descripcion": "Cuerpo medio a completo, con notas a frutos negros, pimienta negra y chocolate.",
         "precio": 5000,
+        "imagenD": "assets/images/vinotinto4.jpg",
         "imagen": "../assets/images/vinotinto4.jpg",
         "imagenes": [
             "../assets/images/vinotinto4.jpg",
@@ -76,6 +81,7 @@
         "tipo": "blanco",
         "descripcion": "Versátil, desde estilos frescos y frutales hasta más complejos con notas de roble.",
         "precio": 5000,
+        "imagenD": "assets/images/vinoblanco2.jpg",
         "imagen": "../assets/images/vinoblanco2.jpg",
         "imagenes": [
             "../assets/images/vinoblanco2.jpg",
@@ -90,6 +96,7 @@
         "tipo": "blanco",
         "descripcion": "Fresco y aromático, con notas cítricas y herbales.",
         "precio": 4700,
+        "imagenD": "assets/images/vinoblanco3.jpg",
         "imagen": "../assets/images/vinoblanco3.jpg",
         "imagenes": [
             "../assets/images/vinoblanco3.jpg",
@@ -104,6 +111,7 @@
         "tipo": "blanco",
         "descripcion": "Elegante y delicado, con notas a frutos rojos y florales.",
         "precio": 5200,
+        "imagenD": "assets/images/vinoblanco4.jpg",
         "imagen": "../assets/images/vinoblanco4.jpg",
         "imagenes": [
             "../assets/images/vinoblanco4.jpg",
@@ -118,6 +126,7 @@
         "tipo": "tinto",
         "descripcion": "Suave y redondo, con notas a frutos negros y especias.",
         "precio": 5600,
+        "imagenD": "assets/images/vinotinto5.jpg",
         "imagen": "../assets/images/vinotinto5.jpg",
         "imagenes": [
             "../assets/images/vinotinto5.jpg",
@@ -132,6 +141,7 @@
         "tipo": "tinto",
         "descripcion": "Buena acidez y taninos suaves, con notas a frutos rojos y especiados.",
         "precio": 5000,
+        "imagenD": "assets/images/vinotinto6.jpg",
         "imagen": "../assets/images/vinotinto6.jpg",
         "imagenes": [
             "../assets/images/vinotinto6.jpg",
@@ -146,6 +156,7 @@
         "tipo": "rosado",
         "descripcion": "Fresco y frutal, ideal para el verano.",
         "precio": 3700,
+        "imagenD": "assets/images/vinorosado.jpg",
         "imagen": "../assets/images/vinorosado.jpg",
         "imagenes": [
             "../assets/images/vinorosado.jpg",
@@ -160,6 +171,7 @@
         "tipo": "rosado",
         "descripcion": "Aroma floral y frutal, con un toque de acidez.",
         "precio": 5600,
+        "imagenD": "assets/images/vinorosado2.jpg",
         "imagen": "../assets/images/vinorosado2.jpg",
         "imagenes": [
             "../assets/images/vinorosado2.jpg",

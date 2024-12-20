@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const img = document.createElement('img');
                 img.classList.add('card-img-top', 'imagen-tarj');
-                img.src = producto.imagen;
+                img.src = producto.imagenD;
                 img.alt = producto.nombre;
 
                 const cardBody = document.createElement('div');
